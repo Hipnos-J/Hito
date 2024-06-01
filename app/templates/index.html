@@ -3,8 +3,8 @@
 {% block title %}Página de Inicio{% endblock %}
 {% load static %}
 {% block content %}
-    <h2>Bienvenido a mi sitio web!</h2>
-    <p>Este es el contenido de la página de inicio.</p>
+    <h2>Bienvenido a Depas Interactivo!</h2>
+    <p>El Contenido de la página de Inicio.</p>
     <section class="container mx-auto pt-5">
       <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
         {% for inm in inmuebles %}
@@ -16,14 +16,14 @@
                 <h5 class="card-title">{{ inm.name }}</h5>
                 <p class="card-text text-justify">
                     {% if inm.descripcion|length > 10 %}
-                        {{ inm.descripcion|slice:":10" }}... <a href="">descripcion</a>
+                        {{ inm.descripcion|slice:":10" }}... <a href="">Descripcion</a>
                     {% else %}
                         {{ inm.descripcion}}
                     {% endif %}
                 </p>
             </div>
               <div class="card-footer">
-                <a href="{% url 'detalle' inm.id %}">detalle del inmueble</a>
+                <a href="{% url 'detalle' inm.id %}">Detalle del inmueble</a>
               </div>
             </div>
           </div>

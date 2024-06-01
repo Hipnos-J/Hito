@@ -32,14 +32,14 @@
                       <h5 class="card-title">{{ inm.name }}</h5>
                       <p class="card-text text-justify">
                           {% if inm.descripcion|length > 10 %}
-                              {{ inm.descripcion|slice:":10" }}... <a href="">descripcion</a>
+                              {{ inm.descripcion|slice:":10" }}... <a href="">Descripcion</a>
                           {% else %}
                               {{ inm.descripcion}}
                           {% endif %}
                       </p>
                   </div>
                     <div class="card-footer">
-                      <a href="{% url 'detalle' inm.id %}">detalle del inmueble</a>
+                      <a href="{% url 'detalle' inm.id %}">Detalle del inmueble</a>
                     </div>
                   </div>
                 </div>
